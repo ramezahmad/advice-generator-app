@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --manrope: "Manrope";
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-reen: hsl(150, 100%, 66%);
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  background-color: var(--Dark-Blue);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container{
+  
+  font-family: var(--manrope);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.output{
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 3rem 2.5rem;
+  max-width: 550px;
+  border-radius: 1rem;
+}
+p{
+  font-weight: 100;
+  font-size: smaller;
+  color: var(--Neon-reen);
+  letter-spacing: 5px;
+  margin:0px 0px 1rem 0px;
+  line-height: 1.5rem;
+}
+q{
+  color: var(--Light-Cyan);
+  font-size: 1.8rem;
+  margin: 1.5rem 0px;
+}
+.output img{
+  width: 100%;
+  margin: 2rem 0px 1.5rem 0px;
+}
+button{
+  outline: none;
+  border: none;
+  background-color: var(--Neon-reen);
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  place-self: center;
+  transition: box-shadow 250ms;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  margin-top: -40px;
+  transition: 0.3s;
+}
+
+button:hover{
+  box-shadow: var(--Neon-reen) 0px 0px 60px 0px;
+}
+button:not(:hover){
+  box-shadow:none
+}
